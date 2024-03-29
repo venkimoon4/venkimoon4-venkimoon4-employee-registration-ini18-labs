@@ -1,0 +1,9 @@
+CREATE DATABASE employee_registration;
+
+USE employee_registration;
+
+CREATE TABLE employee ( id INT NOT NULL PRIMARY KEY AUTO_INCREMENT , firstName VARCHAR(50) , lastName VARCHAR(50) , age INT , gender VARCHAR(50) , email VARCHAR(50), phoneNo VARCHAR(50) , salary INT );
+
+INSERT INTO employee (firstName,lastName,age,gender,email,phoneNo,salary) VALUES ("Venkatesh","S M",22,"Male","venki@gmail.com","123456789",120000);
+
+SELECT * FROM employee;
