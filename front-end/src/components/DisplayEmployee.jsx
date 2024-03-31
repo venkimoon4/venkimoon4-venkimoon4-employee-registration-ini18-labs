@@ -32,7 +32,7 @@ return (
 {employee.map((data,i)=>{
   return <div key={i} className="card border-success mb-3" style={{maxWidth: "30rem"}}>
   <div className="card-header">
-    <p>Employee Id : 101</p>
+    <p>Employee Id : {data.id}</p>
   <div className='card-operations'>
     <div>
       <Link style={{color:"green",textDecoration:"none"}} to="/update" state={data}>
@@ -45,7 +45,7 @@ return (
    </div>
   </div>
   <div className="card-body text-success">
-    <h5 className="card-title">Name : {data.firstName} {data.lastName}</h5>
+    <p className="card-title">Name : {data.firstName} {data.lastName}</p>
     <p className="card-text">Age : {data.age}</p>
     <p className="card-text">Gender : {data.gender}</p>
     <p className="card-text">Email : {data.email}</p>
